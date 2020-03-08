@@ -44,3 +44,4 @@ const days = [
 const dayName = days[d.getDay()];
 const formatted = `${dayName}, ${date} ${monthName} ${year}`;       
 console.log(formatted);
+document.body.innerHTML = formatted;
