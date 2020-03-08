@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     }
-    
+    html {
+      scroll-behavior: smooth;
+    }
+       
     body{
         background-color: #313131;
     }
@@ -29,16 +32,17 @@
       margin-top: 60px;
     }
 
-    .topnav {
+    .navbar {
         overflow: hidden;
         background-color: #313131;
         position: fixed;
         top: 0;
         font-family: 'Cinzel', serif;
+        width: 100%;
 
       }
       
-      .topnav a {
+      .navbar a {
         float: left;
         display: block;
         color: #f2f2f2;
@@ -48,17 +52,22 @@
         font-size: 17px;
       }
       
-      .topnav a:hover {
+      .navbar a:hover {
         background-color: #a72931;
         color: white;;
       }
       
-      .topnav a.active {
+      /*.navbar a.active {
         background-color: #a72931;
         color: white;
+      }*/
+
+      .active a{
+
+      color:red;
       }
       
-      .topnav .icon {
+      .navbar .icon {
         display: none;
       }
       
@@ -81,6 +90,95 @@
           float: none;
           display: block;
           text-align: left;
+      
         }
       }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #a72931;
+        color: white;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+     }     
+
+     .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 25px;
+    }
+    
+    .icon-bar a:hover {
+      background-color: #a72931;
+    }
+    
+    .facebook {
      
+      color: white;
+    }
+    
+    .twitter {
+    
+      color: white;
+    }
+    
+    .instagram {
+    
+      color: white;
+    }
+    
+    .linkedin {
+      color: white;
+    }
+    
+    .youtube {
+      color: white;
+    }
+    
+    .content {
+      margin-left: 75px;
+      font-size: 30px;
+    }    
+    #section1 {
+      padding-top:50px;
+      height:100vh;
+      color: #fff; 
+      background-color: #313131;
+      font-family: 'Cinzel', serif;
+      text-align: center;
+
+    }
+    #section2 {
+      padding-top:50px;
+      height:100vh;
+      color: #fff; 
+      background-color:#3d3d3d;
+      text-align: center;
+    }
+    #section3 {
+      padding-top:50px;
+      height:100vh;
+      color: #fff; 
+      background-color: #313131;
+      text-align: center;
+    }
+    #section4 {
+      padding-top:50px;
+      height:100vh;
+      color: #fff; 
+      background-color: #3d3d3d;
+      text-align: center;
+    }

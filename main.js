@@ -1,13 +1,28 @@
+var date = new Date();
+document.querySelector('#date').innerText = `Date: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+
+
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+    if (x.className === "navbar") {
       x.className += " responsive";
     } else {
-      x.className = "topnav";
+      x.className = "navbar";
     }
   }
 
-const d = new Date();
+  $('#myTopnav').onePageNav({
+    currentClass: 'active',
+    changeHash: false,
+    scrollSpeed: 750,
+    scrollThreshold: 0.5,
+    filter: '',
+    easing: 'swing'
+  });
+  
+  
+/*const d = new Date();
 const year = d.getFullYear();
 const date = d.getDate();
 const months = [
@@ -37,4 +52,4 @@ const days = [
 const dayName = days[d.getDay()];
 const formatted = `${dayName}, ${date} ${monthName} ${year}`;       
 console.log(formatted);
-document.body.innerHTML = formatted;
+document.body.innerHTML = formatted; */
