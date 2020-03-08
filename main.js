@@ -7,13 +7,6 @@ function myFunction() {
     }
   }
 
-/*const currentDate = new Date();
-const month = currentDate.getMonth();
-const day = currentDate.getDate();
-const year = currentDate.getFullYear();
-const fullDate = month + "/" + day + "/" + year;
-document.write(fullDate); */
-
 const d = new Date();
 const year = d.getFullYear();
 const date = d.getDate();
