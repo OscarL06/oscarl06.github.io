@@ -2,11 +2,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Cinzel|Dancing+Script|Great+Vibes&display=swap" rel="stylesheet"> 
-<link rel="shortcut icon" type="image/png" href="/ofavicon.png"/>
+<!--<link rel="shortcut icon" type="image/png" href="/ofavicon.png"/>--->
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="main.js"></script>
+<!--<script src="main.js"></script>-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+<script>
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+        $("p").addClass("active");
+      } else {
+        $("p").removeClass("active");
+      }
+    });
+  });
+  </script>
+
+
+
+
+
+
 <title>OscarL06</title>
 </head>
 
@@ -14,10 +42,10 @@
 <body>
 
     <div class="navbar" id="myTopnav">
-      <a href="#section1" class="active">Home</a>
-      <a href="#section2">About</a>
-      <a href="#section3">Projects</a>
-      <a href="#section4">Contact</a>
+      <a href="#Home" class="active">Home</a>
+      <a href="#AboutMe">About</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Contact">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
@@ -31,29 +59,57 @@
   
     </div>
     
-    <div id="section1" class="container-fluid">
+    <div id="Home" class="container-fluid">
       <img src="oscarl06.png" alt="OscarL06" class="banner1">
       <h1>Oscar Landa</h1>
     
-  <p id="date">a</p>
+  <p id="date"></p>
+  
+  
+
+
 </div>
+
+
+
     </div>
-    <div id="section2" class="container-fluid">
+    <div id="AboutMe" class="container-fluid">
       <h1>About Me</h1>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
     </div>
-    <div id="section3" class="container-fluid">
+    <div id="Projects" class="container-fluid">
       <h1>Projects</h1>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
     </div>
-    <div id="section4" class="container-fluid">
+    <div id="Contact" class="container-fluid">
       <h1>Contact</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      
+     <div class= "form" ></div>
+      <form action="https://formsubmit.co/your@email.com" method="POST">
+          <div class="form-group">
+              <div class="form-row">
+                  <div class="col">
+                      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                  </div>
+                  <div class="col">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group">
+              <textarea placeholder="Your Message" class="form-control" name="message" rows="14" required></textarea>
+          </div>
+          <button type="submit" class="sendbtn">Send</button>
+      </form>
+    </div>
+   
     </div>
 </div>
-<script src="nav.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script src="nav.js"></script
+
 </body> 
+
 </html>

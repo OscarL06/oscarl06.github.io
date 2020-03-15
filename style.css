@@ -152,7 +152,7 @@
       margin-left: 75px;
       font-size: 30px;
     }    
-    #section1 {
+    #Home {
       padding-top:50px;
       height:100vh;
       color: #fff; 
@@ -161,24 +161,28 @@
       text-align: center;
 
     }
-    #section2 {
+    #AboutMe {
       padding-top:50px;
       height:100vh;
       color: #fff; 
       background-color:#3d3d3d;
       text-align: center;
     }
-    #section3 {
+    #Projects {
       padding-top:50px;
       height:100vh;
       color: #fff; 
       background-color: #313131;
       text-align: center;
     }
-    #section4 {
+    #Contact {
       padding-top:50px;
       height:100vh;
       color: #fff; 
       background-color: #3d3d3d;
       text-align: center;
+    }
+    .form{
+      margin-top: 50px;
+      width: 600px;
     }

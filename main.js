@@ -1,9 +1,8 @@
-var date = new Date();
-document.querySelector('#date').innerText = `Date: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+/*var date = new Date();
+document.querySelector('#date').innerText = `Date: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;*/
 
 
-
-function myFunction() {
+/*function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "navbar") {
       x.className += " responsive";
@@ -19,37 +18,40 @@ function myFunction() {
     scrollThreshold: 0.5,
     filter: '',
     easing: 'swing'
-  });
+  });*/
   
   
-/*const d = new Date();
-const year = d.getFullYear();
-const date = d.getDate();
-const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ]
-const monthName = months[d.getMonth()];
-const days = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday'
-  ]
-const dayName = days[d.getDay()];
-const formatted = `${dayName}, ${date} ${monthName} ${year}`;       
-console.log(formatted);
-document.body.innerHTML = formatted; */
+  const d = new Date();
+  const year = d.getFullYear();
+  const date = d.getDate();
+  const months = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December'
+    ]
+  const monthName = months[d.getMonth()];
+  const days = [
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday'
+    ]
+  const dayName = days[d.getDay()];
+  const formatted = `${dayName}, ${monthName} ${date} ${year}`;       
+  console.log(formatted);
+  document.getElementById("date").innerHTML 
+                  = formatted; 
+
+                  
