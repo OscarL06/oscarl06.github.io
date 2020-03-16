@@ -1,6 +1,3 @@
-/*var date = new Date();
-document.querySelector('#date').innerText = `Date: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;*/
-
 
 /*function myFunction() {
     var x = document.getElementById("myTopnav");
